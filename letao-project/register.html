@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link href="css/register.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="register">
+    <div class="header">
+        <div class="header_w">
+            <a href="index.html"><img src="images/img2/logo.png"></a>
+            <span>欢迎注册</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box">
+            <h3>免费注册</h3>
+            <form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span><span class="red">*&nbsp;</span>手机号码：</span></td>
+                            <td><input type="text" placeholder="请输入手机号" id="userName"><span class="userNameRem"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span><span class="red">*&nbsp;</span>密&nbsp;&nbsp;&nbsp;码：</span></td>
+                            <td><input type="password" placeholder="请输入密码" id="pwd"><span class="pwdRem"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span><span class="red">*&nbsp;</span>确认密码：</span></td>
+                            <td><input type="password" placeholder="请再次输入密码" id="nextpwd"><span class="nextpwdRem"></span></td>
+                        </tr>
+                        <tr >
+                            <td><span>推荐人号码：</span></td>
+                            <td style="position:relative;"><input type="text" placeholder="请输入推荐人手机号" id="tjrNum"><span class="tuijianrenRem"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span><span class="red">*&nbsp;</span>图片验证码：</span></td>
+                            <td><input type="text" placeholder="请输入图片验证码" id="yzma"><span class="yanzhengma">1</span><span class="yanzhengmaRem"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span><span class="red">*&nbsp;</span>短信验证码：</span></td>
+                            <td><input type="text" placeholder="请输入短信验证码" id="rzma"><a href="#" class="renzhengma">获取认证码</a><span class="renzhengmaRem"></span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a href="login.html">已有账号？去登陆</a><br/>
+                                <input type="checkbox" class="okCheckbox">&nbsp;<span>我同意</span>&nbsp;
+                                <a href="http://www.letao.com/user_reg_info.html">《会员服务协议》</a><br/>
+                                <div class="registerBtn"><a href="javascript:;">同意协议并注册</a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+
+    var yanzhengma = document.getElementsByClassName("yanzhengma")[0];
+    //4位混合验证码
+    function test11() {
+        //48 dao 90
+        var tmp ='Z';
+        var code = tmp.charCodeAt(0);
+        var str = '';
+        while (str.length != 4){
+            var num = parseInt(Math.random()*91);
+            var char = String.fromCharCode(num);//编码-》字符
+            if(char>='0' && char <= '9'){
+                str += char;
+            }else if(char >= 'A' && char <='Z'){
+                str += char;
+            }
+        }
+        //console.log("222222");
+        return str;
+    }
+    //yanzhengma.innerHtml = test11();
+    //yanzhengma.innerHtml = "33333";
+    $(".yanzhengma").html(test11());
+    yanzhengma .onclick = function () {
+        $(".yanzhengma").html(test11());
+    }
+
+
+   /* var userName = $("#userName").val();
+     var pwd = $("#pwd").val();
+     var nextpwd = $("#nextpwd").val();
+     var tuijianrenNum = $("#tjrNum").val();
+     var renzhengmaNum = $("#rzma").val();
+     */
+    //手机号码检测
+    $("#userName").blur(function () {
+        var userName = $("#userName").val();
+        var reg = /^[0-9]+$/;
+        if(userName == ""){
+            $(".userNameRem").html("请输入手机号码");
+        }else if(reg.test(userName) == true && String(userName).length == 11){
+            $(".userNameRem").html("");
+        }else{
+            $(".userNameRem").html("手机号码格式输入错误");
+        }
+    })
+    //密码检测
+    $("#pwd").blur(function () {
+        var pwd = $("#pwd").val();
+        if(pwd == ""){
+            $(".pwdRem").html("请输入密码");
+        }else{
+            $(".pwdRem").html("");
+        }
+    })
+    //确认密码
+    $("#nextpwd").blur(function () {
+        var nextpwd = $("#nextpwd").val();
+        var pwd = $("#pwd").val();
+        if(nextpwd != pwd){
+            $(".nextpwdRem").html("密码确认错误");
+        }else{
+            $(".nextpwdRem").html("");
+        }
+    })
+    //如果推荐人号码为空，则提示
+    $("#tjrNum").blur(function () {
+        var tuijianrenNum = $("#tjrNum").val();
+        if(tuijianrenNum == ""){
+            $(".tuijianrenRem").html("请输入推荐人号码");
+        }else if(String(tuijianrenNum).length <11 || String(tuijianrenNum).length >11){
+            $(".tuijianrenRem").html("请输入正确的推荐人号码");
+        }else {
+            $(".tuijianrenRem").html("");
+        }
+    })
+    //验证码检测
+    $("#yzma").blur(function () {
+        var yzma = $("#yzma").val();
+        var yanzhengma = $(".yanzhengma").html();
+        //alert(yanzhengma);
+        if(yzma != yanzhengma){
+            $(".yanzhengmaRem").html("验证码输入错误");
+        }else{
+            $(".yanzhengmaRem").html("");
+        }
+    })
+
+    $(".registerBtn").click(function () {
+        var userName = $("#userName").val();
+        //alert(userName);
+        var pwd = $("#pwd").val();
+         var nextpwd = $("#nextpwd").val();
+         var tuijianrenNum = $("#tjrNum").val();
+         var yanzhengmaNum = $("#yzma").val();
+         var renzhengmaNum = $("#rzma").val();
+         //console.log(userName,pwd,nextpwd,tuijianrenNum,yanzhengmaNum,renzhengmaNum);
+         if(userName ==""||pwd ==""||nextpwd==""||tuijianrenNum==""||yanzhengmaNum==""||renzhengmaNum==""){
+             alert("输入项不能为空！");
+         }else{
+             $.ajax({
+                 type:"get",
+                 url:"http://bxu2359550159.my3w.com/letaophp/zhuce.php",
+                 data: {username: userName,pwd:pwd},
+                 dataType: "json",
+                 success: function (result) {
+                     if(result == 1){
+                         window.location.href = "login.html";
+                     }else if(result == 0){
+                         alert("没新增成功");
+                     }else if(result == 2){
+                         alert("该用户已经存在");
+                     }
+                 }
+             })
+
+         }
+
+
+    })
+</script>
+
+</html>

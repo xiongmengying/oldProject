@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/myshoppingcar.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<!-----------------------------------header---------------------------------------->
+<div class="header">
+    <div class="headerTop clear">
+        <div class="wrapper">
+            <div class="left"><span class="currentMember"></span>您好，欢迎来到乐淘商城！</div>
+            <div class="right">
+                <ul class="ulHide">
+                    <li><a href="login.html">登录</a></li>
+                    <li>|</li>
+                    <li><a href="register.html">注册</a></li>
+                    <li>|</li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li>|</li>
+                </ul>
+                <ul style="display:none;" class="ulShow">
+                    <li><a href="javascript:;">退出</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:;">我的收藏</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li>|</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="headerCenter">
+        <div class="wrapper clear">
+            <div class="left hcLeft"><img src="images/img1/logo.png"></div>
+            <div class="left hcCenter">
+                <ul>
+                    <li><img src="images/img1/icon_search.png"></li>
+                    <li><input type="text" class="searchIpt1" placeholder></li>
+                    <li><button class="searchBtn">搜索</button></li>
+                </ul>
+            </div>
+            <div class="left hcRight myshoppingcar">
+                <span class="span1">我的购物车</span>
+                <span class="span2">0</span>
+                <div class="cartClear">您的购物车还没有商品，快去逛逛吧~</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="headerBottom">
+        <div class="wrapper">
+            <ul class="clear">
+                <li class="all"><a href="#"><img src="images/img1/icon_all.png">商品分类</a>
+
+                    <div class="erji">
+                        <div class="erjiTop">
+                            <a href="#">
+                                <p><img src="images/img1/ef872b811e854195b2ac0595205f12f0.gif">
+                                    <a href="javascript:void(0)">运动鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>运动鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="erjiCenter">
+                            <a href="#">
+                                <p><img src="images/img1/b46722cdd6ed4d19816cc3feb23d9ea9.gif">
+                                    <a href="javascript:void(0)">女鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>女鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="erjiBottom">
+                            <a href="#">
+                                <p><img src="images/img1/3e2ec06d9836487db9633eee083c690d.gif">
+                                    <a href="javascript:void(0)">男鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>男鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li><a href="#">首页</a></li>
+                <li>|</li>
+                <li><a href="#">运动休闲鞋</a></li>
+                <li>|</li>
+                <li><a href="#">帆布鞋</a></li>
+                <li>|</li>
+                <li><a href="#">户外鞋</a></li>
+                <li>|</li>
+                <li><a href="#">男鞋</a></li>
+                <li>|</li>
+                <li class="womenBtn"><a href="#">女鞋</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-------------------------body---------------------------------->
+<div class="catbox">
+    <div class="wrapper">
+        <table id="cartTable">
+            <thead>
+            <tr>
+                <th><label>
+                    <input class="check-all check" type="checkbox"/>&nbsp;&nbsp;全选</label></th>
+                <th>商品</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--<tr>
+                <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                <td class="goods"><img src="images/img7/CZ708_017_1.JPG" alt=""/><span>Casio/卡西欧 EX-TR350</span></td>
+                <td class="price">5999.88</td>
+                <td class="count"><span class="reduce"></span>
+                    <input class="count-input" type="text" value="1"/>
+                    <span class="add">+</span></td>
+                <td class="subtotal">5999.88</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+            <tr>
+                <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                <td class="goods"><img src="images/img7/CZ708_017_1.JPG" alt=""/><span>Canon/佳能 PowerShot SX50 HS</span></td>
+                <td class="price">3888.50</td>
+                <td class="count"><span class="reduce"></span>
+                    <input class="count-input" type="text" value="1"/>
+                    <span class="add">+</span></td>
+                <td class="subtotal">3888.50</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>-->
+
+            </tbody>
+        </table>
+        <div class="footer" id="foot">
+            <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
+            <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+            <div class="fr closing" onclick="alert('')">结 算</div>
+            <input type="hidden" id="cartTotalPrice"/>
+            <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+            <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span
+                    class="arrow up">︽</span><span class="arrow down">︾</span></div>
+
+        </div>
+    </div>
+</div>
+
+<!-----------------------foot footer---------------------------->
+<div class="foot">
+    <div class="wrapper">
+        <ul class="clear">
+            <li>
+                <h4>新手帮助</h4>
+                <p><a href="javascript:;">玩转乐淘</a></p>
+                <p><a href="javascript:;">常见问题</a></p>
+                <p><a href="javascript:;">优惠指南</a></p>
+            </li>
+            <li>
+                <h4>购物指南</h4>
+                <p><a href="javascript:;">尺码选择</a></p>
+                <p><a href="javascript:;">配送运费</a></p>
+                <p><a href="javascript:;">签收/验货</a></p>
+            </li>
+            <li>
+                <h4>支付/配送</h4>
+                <p><a href="javascript:;">在线支付</a></p>
+                <p><a href="javascript:;">物流查询</a></p>
+                <p><a href="javascript:;">发货时间</a></p>
+            </li>
+            <li>
+                <h4>售后服务</h4>
+                <p><a href="javascript:;">退换货办理</a></p>
+                <p><a href="javascript:;">退换货政策</a></p>
+                <p><a href="javascript:;">退款说明</a></p>
+            </li>
+            <li>
+                <h4>联系乐淘</h4>
+                <p><a href="javascript:;">400-0022-188</a></p>
+                <p><a href="javascript:;">其他联系方式</a></p>
+                <p><a href="javascript:;">品牌招商</a></p>
+            </li>
+            <li>
+                <h4>APP下载</h4>
+                <p><a href="javascript:;">安卓版</a></p>
+                <p><a href="javascript:;">苹果版</a></p>
+            </li>
+        </ul>
+        <div class="erweima">
+            <p>扫码关注我们</p>
+            <img src="images/img1/9bba548344b34a8d8dd4a026e067a0aa.png">
+        </div>
+    </div>
+</div>
+<footer>
+    <p><span>Copyright @ 2008-2017 letao Inc.乐淘网 版权所有 买鞋子 上乐淘 <i>粤ICP备14019125号</i></span></p>
+</footer>
+</body>
+<script charset=utf-8>
+    //获取userName
+
+    var search = window.location.search;
+    if (search.indexOf("userName") != -1) {
+        //var search1 = encodeURIComponent(search);
+        console.log(search);
+        /*var search1 = decodeURIComponent(search);
+        console.log(search1)
+        var tmp = search1.split("?")[1];
+        var temp1 = tmp.split("&")[0];
+        var temp2 = tmp.split("&")[1];
+        var temp3 = tmp.split("&")[2];
+        var temp4 = tmp.split("&")[3];
+        var temp5 = tmp.split("&")[4];
+        var userName = temp1.split("=")[1];
+        var goodid = temp2.split("=")[1];//得到goodid
+        var cartNum = temp3.split("=")[1];
+        var pro_size = temp4.split("=")[1];
+        var pro_color = temp5.split("=")[1];*/
+//        var pro_color = URLDecoder.decode(request.getParameter("pro_colorL"),"UTF-8");
+//        alert(pro_color);
+        var tmp = search.split("?")[1];
+        var temp1 = tmp.split("&")[0];
+        var temp2 = tmp.split("&")[1];
+        var userName = temp1.split("=")[1];
+        var id = temp2.split("=")[1];//得到用户id
+        $(".currentMember").html(userName);
+        $(".cartClear").hide();
+        $(".ulHide").hide();
+        $(".ulShow").show();
+        $(".ulShow .ulShowli1").click(function () {
+            $(".currentMember").html("");
+            $(".ulHide").show();
+            $(".ulShow").hide();
+        })
+
+        var search = window.location.search;
+        if (search.indexOf("id") != -1) {
+            $.ajax({
+                type: "get",
+                url: "http://bxu2359550159.my3w.com/letaophp/myshoppingcart.php",
+                data: {userId: id},
+                dataType: "json",
+                success: function (result) {
+                    var count = 0;
+                    $(result).each(function (index, item) {
+                        //console.log(item);//"1" "1" "1" "1"
+                        // "Red dream lover 女式 新款真皮坡跟凉鞋欧美风防水台高跟夏季水钻休闲凉鞋CZ708"
+                        //"298"  "28"  "CZ708_017_1.JPG"
+                        count += item[3] * 1;//item[3]为num
+                    })
+                    if (count == 0) {
+                        $(".myshoppingcar .span2").html(0);
+                    } else {
+                        $(".myshoppingcar .span2").html(count);
+                    }
+                }
+            });
+        }
+
+
+        $(document).on("click",".womenBtn",function () {
+            if (search.indexOf("userName") != -1) {
+                window.location.href = "womenshoes.html?userName=" + userName+"&id="+id;
+            }else {
+                window.location.href = "womenshoes.html"
+            }
+        })
+
+        $.ajax({
+            type: "get",
+            //url: "http://localhost/letaophp/letao_select_goodId.php",
+            url:"http://bxu2359550159.my3w.com/letaophp/myshoppingcart.php",
+            data: {userId: id},
+            dataType: "json",
+            success: function (data) {
+                var html = "";
+                console.log(data);//[Array(14)]
+                for (var i = 0; i < data.length; i++) {
+                    var tmp = data[i];
+                    console.log(tmp);
+                    //["Red dream lover 女式 新款真皮女鞋坡跟方头厚底凉鞋夏季舒适中跟凉鞋DSMD79-1", "2", "298", "11",
+                    // "DSMD79-1_017_1.JPG", "29", "红色，绿色", "600", "11", "1_017_1.JPG", "1_017_2.JPG", "1_017_3.JPG",
+                    // "1_017_4.JPG", "1_017_5.JPG"]
+                    var id = tmp[0];
+                    var userId = tmp[1];
+                    var goodId = tmp[2];
+                    var goodName = tmp[4];
+                    var num = tmp[3];
+                    var goodPrice = tmp[5];
+                    var goodNum = tmp[6];
+                    var goodSrc = "images/img7/" + tmp[7];
+
+                    //<li data-id=${goodId} data-num=${goodNum} data<img src=${goodSrc} class="img"/>
+                    console.log(goodId);
+                    var goodPriceAll = num * goodPrice;
+                    html += `<tr>
+                <td class="checkbox"><input class="check-one check" type="checkbox" data-id=${id}/></td>
+                <td class="goods"><img src="${goodSrc}" alt=""/><span>${goodName}</span><span>尺寸：&nbsp;&nbsp;颜色：</span></td>
+                <td class="price">${goodPrice}</td>
+                <td class="count"><span class="reduce" data-id=${id}>-</span>
+                    <input class="count-input" type="text" value="${num}"/>
+                    <span class="add" data-id=${id}>+</span></td>
+                <td class="subtotal">${goodPriceAll}</td>
+                <td class="operation"><span class="delete" data-id=${id}>删除</span></td>
+            </tr>
+                   `
+                }
+                    $("tbody").html(html);
+            }
+        })
+
+        $(document).on("click", ".add", function () {
+            var numInput = $(this).prev();
+            var reduceSpan = $(this).prevAll(".reduce");
+            var beforeNum = numInput.val() * 1;
+            numInput.val(beforeNum + 1);
+            reduceSpan.html("-");
+            var price = $(this).parent().prev().html(); //单价
+            var subtotalSpan = $(this).parent().next(); //小计的td
+            var subtotal = price * numInput.val();
+            subtotalSpan.html(subtotal.toFixed(2));
+            setCountAndPrice();
+
+            updateshoppingNumByid($(this).attr("data-id") * 1, numInput.val() * 1);
+
+        });
+
+        $(document).on("click", ".reduce", function () {//减号 数量变化  小计重新统计 减号消失
+            var numInput = $(this).next();
+            var beforeNum = numInput.val() * 1;
+            if (beforeNum == 1) { //点击的时候判断 如果数量为1 则不进行任何操作
+                return false;
+            }
+            numInput.val(beforeNum - 1);
+            var price = $(this).parent().prev().html(); //单价
+            var subtotalSpan = $(this).parent().next(); //小计的td
+            var subtotal = price * numInput.val();
+            subtotalSpan.html(subtotal.toFixed(2));
+            setCountAndPrice();
+
+            updateshoppingNumByid($(this).attr("data-id") * 1, numInput.val() * 1);
+            if (numInput.val() <= 1) { //点击之后变为1之后  减号消失
+                $(this).html("");
+                return false;
+            }
+        })
+
+
+        $(document).on("click", ".delete", function () {
+            $(this).parents("tr").remove();
+            setCountAndPrice();
+            console.log($(this).attr("data-id") * 1);
+            deleteshoppingByid($(this).attr("data-id") * 1);
+        });
+        //    $(".delete").click(function () {//删除
+        //        $(this).parents("tr").remove();
+        //        setCountAndPrice()
+        //    });
+        $(document).on("click", ".check-one", function () {
+            setCountAndPrice();
+            var maxLength = $(".check-one").size();
+            var allLencth = $(".check-one:checked").length;
+            if (maxLength != allLencth) {
+                $(".check-all").prop("checked", false);
+            } else {
+                $(".check-all").prop("checked", true);
+            }
+        })
+
+        //    $(".check-one").bind("click", function () {
+        //        setCountAndPrice();
+        //
+        //        var maxLength = $(".check-one").size();
+        //        var allLencth = $(".check-one:checked").length;
+        //        if (maxLength != allLencth) {
+        //            $(".check-all").prop("checked", false);
+        //        } else {
+        //            $(".check-all").prop("checked", true);
+        //        }
+        //    })
+
+        $(document).on("click", "#deleteAll", function () {
+
+            $(".check-one:checked").each(function (index, item) {
+                deleteshoppingByid($(item).attr("data-id") * 1);
+            })
+
+            $(".check-one:checked").parents("tr").remove();
+            setCountAndPrice();
+        })
+
+        //    $("#deleteAll").click(function () {
+        //        $(".check-one:checked").parents("tr").remove();
+        //        setCountAndPrice();
+        //    })
+
+
+        $(document).delegate(".check-all", "click", function () {
+            $(".check-one").prop("checked", $(this).prop("checked"));
+            setCountAndPrice();
+        })
+
+        function updateshoppingNumByid(id, num) {
+            $.ajax({
+                type: "get",
+                url: "http://bxu2359550159.my3w.com/letaophp/updateshoppingcart.php",
+                data: {num: num,id:id},
+                success: function (result) {
+                    if (result) {
+                        alert("更新成功")
+                    } else {
+                        alert("服务器正在维护中");
+                    }
+                }
+            })
+        }
+
+
+        function deleteshoppingByid(id) {
+            $.ajax({
+                type: "get",
+                url: "http://bxu2359550159.my3w.com/letaophp/deleteshoppingcart.php",
+                data: {id: id},
+                success: function (result) {
+                    if (result) {
+                    } else {
+                        alert("服务器正在维护中");
+                    }
+                }
+            })
+        }
+        function setCountAndPrice() {
+            var count = 0;
+            var totalPrice = 0;
+            $(".check-one").each(function (index, value) {
+                if ($(value).prop("checked")) {
+                    count += $(value).parents("tr").find(".count-input").val() * 1;
+                    totalPrice += $(value).parents("tr").find(".subtotal").html() * 1;
+                }
+            })
+            $("#priceTotal").html(totalPrice.toFixed(2));
+            $("#selectedTotal").html(count);
+        }
+    }
+</script>
+
+
+</html>

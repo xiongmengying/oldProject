@@ -1,0 +1,51 @@
+@charset "UTF-8";
+body, p, ul, ol, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0; }
+
+body {
+    font: 12px "微软雅黑"; }
+
+li {
+    list-style: none;
+    float: left; }
+
+img {
+    border: 0; }
+
+a {
+    text-decoration: none;
+    color: #666; }
+
+b, em, strong, i, h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-style: normal; }
+
+.left {
+    float: left; }
+
+.right {
+    float: right; }
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto; }
+
+
+/*----------------------------productBox-----------------------*/
+.productBox{padding:20px 0;}
+.priceArea{height:50px;border-top:2px solid #ccc;border-bottom:2px solid #ccc;}
+.priceArea li{width:100px;line-height: 50px;text-align: center;}
+.priceArea li a{display:block;}
+
+.sort{margin-top:10px;border-top:2px solid #ccc;border-bottom:2px solid #ccc;height:50px;padding:5px 0;}
+.sort ul li{border:1px solid #c5c5c5;height:40px;text-align:center;line-height:40px;padding:0 10px;}
+.sort ul li a{display:block;}

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/search.js"></script>
+    <!--<script src="js/gotoTop.js"></script>-->
+
+</head>
+<body>
+<div class="header">
+    <div class="headerTop clear">
+        <div class="wrapper">
+            <div class="left"><span class="currentMember"></span>您好，欢迎来到乐淘商城！</div>
+            <div class="right">
+                <ul class="ulHide">
+                    <li><a href="login.html">登录</a></li>
+                    <li>|</li>
+                    <li><a href="register.html">注册</a></li>
+                    <li>|</li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li>|</li>
+                </ul>
+                <ul style="display:none;" class="ulShow">
+                    <li class="ulShowli1"><a href="javascript:;">退出</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:;">我的收藏</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li>|</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="headerCenter">
+        <div class="wrapper clear">
+            <div class="left hcLeft"><img src="images/img1/logo.png"></div>
+            <div class="left hcCenter">
+                <ul>
+                    <li><img src="images/img1/icon_search.png"></li>
+                    <li><input type="text" class="searchIpt1" placeholder="请输入如 女鞋 女士鞋，时髦女鞋 字样"></li>
+                    <li><button class="searchBtn">搜索</button></li>
+                </ul>
+            </div>
+            <div class="left hcRight myshoppingcar">
+                <span class="span1">我的购物车</span>
+                <span class="span2">0</span>
+                <div class="cartClear">您的购物车还没有商品，快去逛逛吧~</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="headerBottom">
+        <div class="wrapper">
+            <ul>
+                <li class="all"><a href="#"><img src="images/img1/icon_all.png">商品分类</a>
+
+                    <div class="erji">
+                        <div class="erjiTop">
+                            <a href="#">
+                                <p><img src="images/img1/ef872b811e854195b2ac0595205f12f0.gif">
+                                    <a href="javascript:void(0)">运动鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>运动鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="erjiCenter">
+                            <a href="#">
+                                <p><img src="images/img1/b46722cdd6ed4d19816cc3feb23d9ea9.gif">
+                                    <a href="javascript:void(0)">女鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>女鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="erjiBottom">
+                            <a href="#">
+                                <p><img src="images/img1/3e2ec06d9836487db9633eee083c690d.gif">
+                                    <a href="javascript:void(0)">男鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>男鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li><a href="#">首页</a></li>
+                <li>|</li>
+                <li><a href="#">运动休闲鞋</a></li>
+                <li>|</li>
+                <li><a href="#">帆布鞋</a></li>
+                <li>|</li>
+                <li><a href="#">户外鞋</a></li>
+                <li>|</li>
+                <li><a href="#">男鞋</a></li>
+                <li>|</li>
+                <li class="womenBtn"><a href="#">女鞋</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="banner">
+    <ul class="item">
+        <li><a href="javascript:;"><img src="images/img1/90b65ed7a9e94a19b6650f5932f36ba0.gif"></a></li>
+        <li><a href="javascript:;"><img src="images/img1/1b177802ddaf426fa7643cc34245e149.jpg"></a></li>
+        <li><a href="javascript:;"><img src="images/img1/decab1f728a241bbbb19624d386a9eea.jpg"></a></li>
+    </ul>
+    <div class="banner-prev"><img src="images/img1/banner-prev.png"></div>
+    <div class="banner-next"><img src="images/img1/banner-next.png"></div>
+    <ul class="point">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/lunbo.js"></script>
+
+<div class="body">
+    <div class="wrapper">
+        <div class="main">
+            <div class="mainTop">
+                <div class="mainTop1">
+                    <ul class="clear">
+                        <li><a href="javascript:;"><img src="images/img1/eace6482105a42abbc5d450a31cb869c.jpg"></a></li>
+                        <li class="mainTop1Women"><a href="javascript:;"><img src="images/img1/1b700393c2cd465fba1ad915d6d29677.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/32315bc33bc94ea8953720b8f28dfaa3.jpg"></a></li>
+                    </ul>
+                </div>
+                <div class="mainTop2">
+                    <ul class="clear">
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/3e38c83924d04f4791dce6883734c817.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/ac3faee52bf645788aed48e2a473e8f4.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/73c3c99371924013a7c9b0ea31c601b4.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/f843818fc561450bbf7bf982e3ddc682.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/57f468a022eb4fa0b1bb938e5b5aca9c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/449b58dd63a147bca62f22382d526f45.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/9dc59c11227649bb8cb7d392c869ef5c.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainCenter">
+                <p><img src="images/img1/1838a112fc0f4e6e950da0b42ac6cb2b.jpg"></p>
+                <div class="miaosha">
+                    <ul class="clear">
+                        <li class="clear">
+                            <a href="javascript:;"><img src="images/img1/ca7a4d28f96a4abeb2840a6ab4338ddd_small.jpg"></a>
+                            <h3>秒杀价：￥399</h3>
+                            <h5><s>原价：￥699</s></h5>
+                            <h4><a href="javascript:;">耐克Nike 女士 编织鞋透气</a></h4>
+                            <p>距离结束：<span class="day">01</span>&nbsp;天&nbsp;<span class="hour">08</span>&nbsp;:&nbsp;<span class="minute">21</span>&nbsp;:&nbsp;<span class="second">53</span></p>
+                            <div>秒&nbsp;杀</div>
+                        </li>
+                        <li class="clear">
+                            <a href="javascript:;"><img src="images/img1/ca7a4d28f96a4abeb2840a6ab4338ddd_small.jpg"></a>
+                            <h3>秒杀价：￥399</h3>
+                            <h5><s>原价：￥699</s></h5>
+                            <h4><a href="javascript:;">耐克Nike 女士 编织鞋透气...</a></h4>
+                            <p>距离结束：<span class="day">01</span>&nbsp;天&nbsp;<span class="hour">08</span>&nbsp;:&nbsp;<span class="minute">21</span>&nbsp;:&nbsp;<span class="second">53</span></p>
+                            <div>秒&nbsp;杀</div>
+                        </li>
+                        <li class="clear">
+                            <a href="javascript:;"><img src="images/img1/ca7a4d28f96a4abeb2840a6ab4338ddd_small.jpg"></a>
+                            <h3>秒杀价：￥399</h3>
+                            <h5><s>原价：￥699</s></h5>
+                            <h4><a href="javascript:;">耐克Nike 女士 编织鞋透气...</a></h4>
+                            <p>距离结束：<span class="day">01</span>&nbsp;天&nbsp;<span class="hour">08</span>&nbsp;:&nbsp;<span class="minute">21</span>&nbsp;:&nbsp;<span class="second">53</span></p>
+                            <div>秒&nbsp;杀</div>
+                        </li>
+                        <li class="clear">
+                            <a href="javascript:;"><img src="images/img1/ca7a4d28f96a4abeb2840a6ab4338ddd_small.jpg"></a>
+                            <h3>秒杀价：￥399</h3>
+                            <h5><s>原价：￥699</s></h5>
+                            <h4><a href="javascript:;">耐克Nike 女士 编织鞋透气...</a></h4>
+                            <p>距离结束：<span class="day">01</span>&nbsp;天&nbsp;<span class="hour">08</span>&nbsp;:&nbsp;<span class="minute">21</span>&nbsp;:&nbsp;<span class="second">53</span></p>
+                            <div>秒&nbsp;杀</div>
+                        </li>
+                        <li class="clear">
+                            <a href="javascript:;"><img src="images/img1/ca7a4d28f96a4abeb2840a6ab4338ddd_small.jpg"></a>
+                            <h3>秒杀价：￥399</h3>
+                            <h5><s>原价：￥699</s></h5>
+                            <h4><a href="javascript:;">耐克Nike 女士 编织鞋透气...</a></h4>
+                            <p>距离结束：<span class="day">01</span>&nbsp;天&nbsp;<span class="hour">08</span>&nbsp;:&nbsp;<span class="minute">21</span>&nbsp;:&nbsp;<span class="second">53</span></p>
+                            <div>秒&nbsp;杀</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainBottom"><a href="javascript:;"><img src="images/img1/38c045f79c81421b8be1ce58480bd386.jpg"></a></div>
+        </div>
+
+        <div class="box">
+            <div class="boxTop">
+                <p><img src="images/img1/7b3c9025bd3b4b6991b4734e5c96e646.jpg"><a href="javascript:;">更多 >></a></p>
+                <ul>
+                    <li class="hot1"><a href="javascript:;"><img src="images/img1/f725cd7aa3c743c5901412f4a1f9de18.jpg"></a></li>
+                    <li class="hot2">
+                        <div><a href="javascript:;"><img src="images/img1/1b93a608d8694a52981e85ab789c5d81.jpg"></a></div>
+                        <div><a href="javascript:;"><img src="images/img1/c08b69cdf3c8488fa37f203192791699.jpg"></a></div>
+                    </li>
+                    <li class="hot3">
+                        <div><a href="javascript:;">
+                            <img src="images/img1/580245e23acf4820889ebdc022537a54.jpg"><img src="images/img1/23cd80822d874f53b35b0de9bb4213b5.jpg">
+                        </a></div>
+                        <div><a href="javascript:;">
+                            <img src="images/img1/ef3b311fdee84075963650f3cdff57f6.jpg"><img src="images/img1/b7f9cf5f613742f5b26c635c3f919018.jpg">
+                        </a></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="boxSport">
+                <p><img src="images/img1/7b3c9025bd3b4b6991b4734e5c96e646.jpg"><a href="javascript:;">更多 >></a></p>
+                <div class="boxSportTop"><a href="javascript:;"><img src="images/img1/96840ea5acff416f8ece92d677956d5b.jpg"></a></div>
+                <div class="boxSportBot clear">
+                    <ul class="left">
+                        <li><a href="javascript:;"><img src="images/img1/c276c1435a234abe8778b388e636cc63.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/980d6b8485f241f297f7161e41453e89.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                    </ul>
+                    <div class="left"><a href="javascript:;">
+                        <img src="images/img1/1ad25bdfca2c4b1f9e7f5a44c4a576dd.jpg"><img src="images/img1/6a37705bec7945bfab8c90292d87587d.jpg">
+                    </a></div>
+                </div>
+            </div>
+
+            <div class="boxMen">
+                <p><img src="images/img1/7b3c9025bd3b4b6991b4734e5c96e646.jpg"><a href="javascript:;">更多 >></a></p>
+                <div class="boxMenTop"><a href="javascript:;"><img src="images/img1/96840ea5acff416f8ece92d677956d5b.jpg"></a></div>
+                <div class="boxMenBot clear">
+                    <div class="left"><a href="javascript:;">
+                        <img src="images/img1/1ad25bdfca2c4b1f9e7f5a44c4a576dd.jpg"><img src="images/img1/6a37705bec7945bfab8c90292d87587d.jpg">
+                    </a></div>
+                    <ul class="left">
+                        <li><a href="javascript:;"><img src="images/img1/c276c1435a234abe8778b388e636cc63.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/980d6b8485f241f297f7161e41453e89.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="boxWomen">
+                <p><img src="images/img1/7b3c9025bd3b4b6991b4734e5c96e646.jpg"><a href="javascript:;">更多 >></a></p>
+                <div class="boxWomenBot clear">
+                    <ul class="left">
+                        <li><a href="javascript:;"><img src="images/img1/c276c1435a234abe8778b388e636cc63.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/980d6b8485f241f297f7161e41453e89.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="images/img1/cf66578a66cb455a8b31625ff2cd012b.jpg"></a></li>
+                    </ul>
+                    <div class="left"><a href="javascript:;">
+                        <img src="images/img1/1ad25bdfca2c4b1f9e7f5a44c4a576dd.jpg"><img src="images/img1/6a37705bec7945bfab8c90292d87587d.jpg">
+                    </a></div>
+                </div>
+            </div>
+
+            <div class="boxBot">
+                <p><img src="images/img1/7b3c9025bd3b4b6991b4734e5c96e646.jpg"><a href="javascript:;">更多 >></a></p>
+                <ul>
+                    <li><a href="javascript:;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;" style="border-right:3px solid white;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;" style="border-bottom:3px solid white;"><img src="images/img1/e0db1bb4eb264e7b88a12fb52a2fc545.jpg"></a></li>
+                    <li><a href="javascript:;" style="border-bottom:3px solid white;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;" style="border-bottom:3px solid white;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;" style="border-bottom:3px solid white;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                    <li><a href="javascript:;" style="border-right:3px solid white;border-bottom:3px solid white;"><img src="images/img1/d0f4b976ebfc4205877dd8fd3944a646.jpg"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="foot">
+    <div class="wrapper">
+        <ul class="clear">
+            <li>
+                <h4>新手帮助</h4>
+                <p><a href="javascript:;">玩转乐淘</a></p>
+                <p><a href="javascript:;">常见问题</a></p>
+                <p><a href="javascript:;">优惠指南</a></p>
+            </li>
+            <li>
+                <h4>购物指南</h4>
+                <p><a href="javascript:;">尺码选择</a></p>
+                <p><a href="javascript:;">配送运费</a></p>
+                <p><a href="javascript:;">签收/验货</a></p>
+            </li>
+            <li>
+                <h4>支付/配送</h4>
+                <p><a href="javascript:;">在线支付</a></p>
+                <p><a href="javascript:;">物流查询</a></p>
+                <p><a href="javascript:;">发货时间</a></p>
+            </li>
+            <li>
+                <h4>售后服务</h4>
+                <p><a href="javascript:;">退换货办理</a></p>
+                <p><a href="javascript:;">退换货政策</a></p>
+                <p><a href="javascript:;">退款说明</a></p>
+            </li>
+            <li>
+                <h4>联系乐淘</h4>
+                <p><a href="javascript:;">400-0022-188</a></p>
+                <p><a href="javascript:;">其他联系方式</a></p>
+                <p><a href="javascript:;">品牌招商</a></p>
+            </li>
+            <li>
+                <h4>APP下载</h4>
+                <p><a href="javascript:;">安卓版</a></p>
+                <p><a href="javascript:;">苹果版</a></p>
+            </li>
+        </ul>
+        <div class="erweima">
+            <p>扫码关注我们</p>
+            <img src="images/img1/9bba548344b34a8d8dd4a026e067a0aa.png">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p><span>Copyright @ 2008-2017 letao Inc.乐淘网 版权所有 买鞋子 上乐淘 <i>粤ICP备14019125号</i></span></p>
+</footer>
+
+
+<div class="fixTop">
+    <input type="text" placeholder="输入关键字 如 女鞋 女士鞋，时髦女鞋 字样" class="searchIpt2">
+    <button class="searchBtn">搜索</button>
+</div>
+<div class="fixRight">
+    <i><img src="images/img1/tk-service.png"></i>
+    <div><a href="javascript:;">
+        <p>电话咨询</p>
+        <p>400-0022-188</p>
+    </a></div>
+    <div><a href="javascript:;">
+        <p>在线咨询</p>
+        <p><img src="images/img1/tk-icon-link.png"></p>
+    </a></div>
+    <div class="cart"><a href="javascript:;">
+        <p>购物车</p>
+        <p><img src="images/img1/tk-icon-cart.png"></p>
+    </a></div>
+    <div class="gototop"><a href="javascript:;">
+        <p>返回顶部</p>
+        <p><img src="images/img1/tk-icon-gototop.png"></p>
+    </a></div>
+</div>
+
+<script>
+    //滚动条滚到一定高度时，搜索条出现
+    console.log($(window).scrollTop());
+    var st = $(window).scrollTop();
+    $(window).scroll(function ()
+      {
+          //st = $(this).scrollTop();
+          console.log(st);
+          if($(this).scrollTop() >= 300){
+              $(".fixTop").css("position","fixed").animate({left:0,top:0},50);
+          }
+          if($(this).scrollTop() < 300){
+              $(".fixTop").css("position","fixed").animate({left:0,top:-50},50);
+          }
+      });
+      //返回顶部
+    $(".gototop").click(function () {
+        //$(window).scrollTop().animate({top:"0"},2);
+        $(window).scrollTop(0);
+    });
+    /*$(function(){
+        $(".gototop").goToTop();
+        $(window).bind('scroll resize',function(){
+            $(".gototop").goToTop();
+        });
+    });*/
+
+
+    /********************
+   * 取窗口滚动条高度
+   ******************/
+  /* function getScrollTop(){
+        var scrollTop=0;
+        if(document.documentElement&&document.documentElement.scrollTop)
+        {
+            scrollTop=document.documentElement.scrollTop;
+        }
+        else if(document.body)
+        {
+            scrollTop=document.body.scrollTop;
+        }
+        return scrollTop;
+   }
+   var fixTop = document.getElementsByClassName("fixTop")[0];
+   if(getScrollTop() >= 100){
+       fixTop.style.left = "0" + "px";
+       fixTop.style.top = "0" + "px";
+   }*/
+
+    /*//鼠标经过二级导航时，查找li下的ul.
+    $(".erji").hover(function(){
+        $(this).find(".sanji").show();
+    },function(){
+        $(this).find(".sanji").hide();
+    })
+*/
+
+    //获取userName
+    var search = window.location.search;
+    if (search.indexOf("userName") != -1) {
+        var tmp = search.split("?")[1];
+        var temp1 = tmp.split("&")[0];
+        var temp2 = tmp.split("&")[1];
+        var userName = temp1.split("=")[1];
+        var id = temp2.split("=")[1];//得到登陆用户的id
+        $(".currentMember").html(userName);
+        $(".cartClear").hide();
+        $(".ulHide").hide();
+        $(".ulShow").show();
+        $(".ulShow .ulShowli1").click(function () {
+            $(".currentMember").html("");
+            $(".ulHide").show();
+            $(".ulShow").hide();
+        })
+
+        var search = window.location.search;
+        if (search.indexOf("id") != -1) {
+            $.ajax({
+                type: "get",
+                url: "http://bxu2359550159.my3w.com/letaophp/myshoppingcart.php",
+                data: {userId: id},
+                dataType: "json",
+                success: function (result) {
+                    var count = 0;
+                    $(result).each(function (index, item) {
+                        //console.log(item);//"1" "1" "1" "1"
+                        // "Red dream lover 女式 新款真皮坡跟凉鞋欧美风防水台高跟夏季水钻休闲凉鞋CZ708"
+                        //"298"  "28"  "CZ708_017_1.JPG"
+                        count += item[3] * 1;//item[3]为num
+                    })
+                    if (count == 0) {
+                        $(".span2").html(0);
+                    } else {
+                        $(".span2").html(count);
+                    }
+                }
+            });
+        }
+    }
+    $(".womenBtn").click(function () {
+        if (search.indexOf("userName") != -1) {
+            window.location.href = "womenshoes.html?userName=" + userName+"&id="+id;
+        }else {
+            window.location.href = "womenshoes.html"
+        }
+    });
+    $(".mainTop1Women").click(function () {
+        if (search.indexOf("userName") != -1) {
+            window.location.href = "womenshoes.html?userName=" + userName+"&id="+id;
+        }else {
+            window.location.href = "womenshoes.html"
+        }
+    });
+    $(document).on("click",".myshoppingcar",function () {
+        window.location.href = "myshoppingcar.html?userName="+userName+"&id="+id;
+    });
+
+
+</script>
+
+
+
+</body>
+</html>

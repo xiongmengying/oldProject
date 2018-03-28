@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="login">
+    <div class="header">
+        <div class="header_w">
+            <a href="index.html"><img src="images/img2/logo.png"></a>
+            <span>欢迎登录</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box">
+            <h3>登录</h3>
+            <div class="loginUser">
+                <i><img src="images/img2/icon_user.png"/></i>
+                <input type="text" placeholder="用户名/手机号" id="userName">
+            </div>
+            <div class="loginPassword">
+                <i><img src="images/img2/icon_lock.png"/></i>
+                <input type="password" placeholder="密码" id="pwd">
+            </div>
+            <div class="loginLink clear">
+                <p class="pl left">
+                    <input type="checkbox" id="rememberPwdCheckbox">
+                    <span class="rememberPwd">记住密码&nbsp;&nbsp;</span>
+                </p>
+                <p class="pr left">
+                    <a href="javascript:;">验证码登陆&nbsp;&nbsp;&nbsp;</a>
+                    <a href="javascript:;">忘记密码？&nbsp;&nbsp;</a>
+                    <a href="register.html">免费注册</a>
+                </p>
+            </div>
+            <div class="loginBtn">登录</div>
+        </div>
+    </div>
+    <div class="footer">
+        <p><span>Copyright @ 2008-2017 letao Inc.乐淘网 版权所有 买鞋子 上乐淘 <i>粤ICP备14019125号</i></span></p>
+    </div>
+</div>
+
+<script>
+    /*$(document).ready(function () {
+        if (confirm("如果你还没有注册，请点击确定 进入注册页面")) {
+            window.location.href = "register.html";
+        }else{
+            $(".loginBtn").click(function () {
+                var userName = $("#userName").val();
+                window.location.href= "index.html?userName="+userName;
+
+            })
+        }
+    })*/
+
+
+    /*$(".loginBtn").click(function () {
+        var userName = $("#userName").val();
+        var pwd = $("#pwd").val();
+        if(userName == ""){
+            alert("用户名不能为空");
+        }else{
+            if(pwd==""){
+                alert("密码不能为空");
+            }else{
+                window.location.href= "index.html?userName="+userName;
+            }
+        }
+    })*/
+    var usernamInput = document.querySelector("#userName");
+    var pwdInput = document.querySelector("#pwd");
+    var btn = document.querySelector(".loginBtn");
+    btn.onclick = function () {
+        //xiong 12345
+        var userName = $("#userName").val();
+        $.get("http://bxu2359550159.my3w.com/letaophp/login.php", {
+            username: usernamInput.value,
+            pwd: pwdInput.value
+        }, function (result) {
+            if (result.indexOf("_") != -1) {
+                //alert(result.split("_")[1]);
+                //window.location.href= "index.html";
+                var search = window.location.search;
+                if (search.indexOf("userName") != -1) {
+                    window.location.href = "womenshoes.html?userName="+userName+"&id=" + result.split("_")[1];
+                }
+                else{window.location.href= "index.html?userName="+userName+"&id=" + result.split("_")[1];}
+            } else if (result == "0") {//不能登陆成功的详细说明
+                alert("该用户不存在")
+            } else if (result == "2") {
+                alert("用户名和密码不匹配");
+            }
+        });
+    }
+
+
+</script>
+</body>
+</html>

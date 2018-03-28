@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/productIntroduce.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/common1.js"></script>
+    <!--<script src="js/fangdajing.js"></script>-->
+
+
+</head>
+<body>
+<!-----------------------------------header---------------------------------------->
+<div class="header">
+    <div class="headerTop clear">
+        <div class="wrapper">
+            <div class="left"><span class="currentMember"></span>您好，欢迎来到乐淘商城！</div>
+            <div class="right">
+                <ul class="ulHide">
+                    <li><a href="login.html">登录</a></li>
+                    <li>|</li>
+                    <li><a href="register.html">注册</a></li>
+                    <li>|</li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li>|</li>
+                </ul>
+                <ul style="display:none;" class="ulShow">
+                    <li><a href="javascript:;">退出</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:;">我的收藏</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li>|</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="headerCenter">
+        <div class="wrapper clear">
+            <div class="left hcLeft"><img src="images/img1/logo.png"></div>
+            <div class="left hcCenter">
+                <ul>
+                    <li><img src="images/img1/icon_search.png"></li>
+                    <li><input type="text" class="searchIpt1" placeholder></li>
+                    <li><button class="searchBtn">搜索</button></li>
+                </ul>
+            </div>
+            <div class="left hcRight myshoppingcar">
+                <span class="span1">我的购物车</span>
+                <span class="span2">0</span>
+                <div class="cartClear">您的购物车还没有商品，快去逛逛吧~</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="headerBottom">
+        <div class="wrapper">
+            <ul class="clear">
+                <li class="all"><a href="#"><img src="images/img1/icon_all.png">商品分类</a>
+
+                    <div class="erji">
+                        <div class="erjiTop">
+                            <a href="#">
+                                <p><img src="images/img1/ef872b811e854195b2ac0595205f12f0.gif">
+                                    <a href="javascript:void(0)">运动鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>运动鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="erjiCenter">
+                            <a href="#">
+                                <p><img src="images/img1/b46722cdd6ed4d19816cc3feb23d9ea9.gif">
+                                    <a href="javascript:void(0)">女鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>女鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="erjiBottom">
+                            <a href="#">
+                                <p><img src="images/img1/3e2ec06d9836487db9633eee083c690d.gif">
+                                    <a href="javascript:void(0)">男鞋</a>
+                                    <i><img src="images/img1/icon_dirL.png"></i>
+                                </p>
+                                <p>品牌 款式</p>
+                            </a>
+                            <div class="sanji">
+                                <p><a><span>男鞋&nbsp;</span><i><img src="images/img1/icon_dirL.png"></i></a></p>
+                                <div class="sanjiCenter clear">
+                                    <div class="left">品牌 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">耐克</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">阿迪达斯</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sanjiBottom clear">
+                                    <div class="left">款式 &nbsp; &gt;</div>
+                                    <div class="left">
+                                        <ul>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">板鞋</a></li>
+                                            <li>|</li>
+                                            <li><a href="javascript:void(0)">跑步鞋</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li><a href="#">首页</a></li>
+                <li>|</li>
+                <li><a href="#">运动休闲鞋</a></li>
+                <li>|</li>
+                <li><a href="#">帆布鞋</a></li>
+                <li>|</li>
+                <li><a href="#">户外鞋</a></li>
+                <li>|</li>
+                <li><a href="#">男鞋</a></li>
+                <li>|</li>
+                <li class="womenBtn"><a href="#">女鞋</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-------------------------body---------------------------------->
+<div class="productIntroduce">
+    <div class="wrapper clear productIntroduce-wrapper">
+        <!--<div class="left box">
+            <div class="small">
+                <img src="images/img7/CZ708_017_1.JPG">
+                <div class="mask"></div>
+            </div>
+            <div class="sosmall">
+                <ul class="clear">
+                    <li class="current"><a><img src="images/img7/CZ708_017_1.JPG"/></a></li>
+                    <li><a><img src="images/img7/CZ708_017_2.JPG"/></a></li>
+                    <li><a><img src="images/img7/CZ708_017_3.JPG"/></a></li>
+                    <li><a><img src="images/img7/CZ708_017_4.JPG"/></a></li>
+                    <li><a><img src="images/img7/CZ708_017_5.JPG"/></a></li>
+                </ul>
+            </div>
+            <div class="big">
+                <img src="images/img7/CZ708_017_1.JPG">
+            </div>
+        </div>
+        <div class="left rightBox">
+            <div class="pro_desc"><h2>Red dream lover 女式 新款真皮坡跟凉鞋欧美风防水台高跟夏季水钻休闲凉鞋CZ708</h2></div>
+            <div class="pro_price">
+                <span class="pro_price_title">销售价：</span>
+                <span style="color:red;">￥</span>
+                <strong class="pro_price_detail" style="color:red;">298.00</strong>
+                <del>市场价：549.00</del>
+            </div>
+            <div class="pro_cuxiao">
+                <span class="pro_cuxiao_title">促销信息：</span>
+                <em>满减</em>
+                <span>满300.0减50.0 满200.0减30.0</span>
+            </div>
+            <div class="pro_size">
+                <span class="pro_size_title">尺寸：</span>
+                <ul class="clear">
+                    <li><a href="javascript:;" value="34">34</a></li>
+                    <li><a value="35">35</a></li>
+                    <li><a value="36">36</a></li>
+                    <li><a value="37">37</a></li>
+                    <li><a value="38">38</a></li>
+                    <li><a value="39">39</a></li>
+                </ul>
+            </div>
+            <div class="pro_color clear">
+                <span class="pro_color-title">颜色：</span>
+                <ul class="clear">
+                    <li><a value="红色">红色</a></li>
+                    <li><a value="绿色">绿色</a></li>
+                </ul>
+            </div>
+            <div class="pro_num clear">
+                <span class="pro_num_title">数量：</span>
+                <div class="pro_num_box">
+                    <div class="left">
+                        <span class="jian">-</span>
+                        <input id="buyNum" value="1" >
+                        <span class="jia">+</span>
+                    </div>
+                    <div class="left">
+                        <span>剩余<span id="restNum">50</span>件</span>
+                        <span><span id="payUserNum">28</span>人已购买</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pro_btn">
+                <button class="addCart"><a><i><img src="images/img7/icon-cart.png"/></i>加入购物车</a></button>
+                <button class="lijiBuy"><a>立即购买</a></button>
+            </div>
+        </div>-->
+    </div>
+</div>
+<!-----------------------foot footer---------------------------->
+<div class="foot">
+    <div class="wrapper">
+        <ul class="clear">
+            <li>
+                <h4>新手帮助</h4>
+                <p><a href="javascript:;">玩转乐淘</a></p>
+                <p><a href="javascript:;">常见问题</a></p>
+                <p><a href="javascript:;">优惠指南</a></p>
+            </li>
+            <li>
+                <h4>购物指南</h4>
+                <p><a href="javascript:;">尺码选择</a></p>
+                <p><a href="javascript:;">配送运费</a></p>
+                <p><a href="javascript:;">签收/验货</a></p>
+            </li>
+            <li>
+                <h4>支付/配送</h4>
+                <p><a href="javascript:;">在线支付</a></p>
+                <p><a href="javascript:;">物流查询</a></p>
+                <p><a href="javascript:;">发货时间</a></p>
+            </li>
+            <li>
+                <h4>售后服务</h4>
+                <p><a href="javascript:;">退换货办理</a></p>
+                <p><a href="javascript:;">退换货政策</a></p>
+                <p><a href="javascript:;">退款说明</a></p>
+            </li>
+            <li>
+                <h4>联系乐淘</h4>
+                <p><a href="javascript:;">400-0022-188</a></p>
+                <p><a href="javascript:;">其他联系方式</a></p>
+                <p><a href="javascript:;">品牌招商</a></p>
+            </li>
+            <li>
+                <h4>APP下载</h4>
+                <p><a href="javascript:;">安卓版</a></p>
+                <p><a href="javascript:;">苹果版</a></p>
+            </li>
+        </ul>
+        <div class="erweima">
+            <p>扫码关注我们</p>
+            <img src="images/img1/9bba548344b34a8d8dd4a026e067a0aa.png">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p><span>Copyright @ 2008-2017 letao Inc.乐淘网 版权所有 买鞋子 上乐淘 <i>粤ICP备14019125号</i></span></p>
+</footer>
+</body>
+
+<style>
+
+</style>
+
+<script>
+    //获取userName
+
+    var search = window.location.search;
+    if (search.indexOf("userName") != -1) {
+        var tmp = search.split("?")[1];
+        var temp1 = tmp.split("&")[0];
+        var temp2 = tmp.split("&")[1];
+        var temp3 = tmp.split("&")[2];
+        var userName = temp1.split("=")[1];
+        var goodid = temp2.split("=")[1];//得到goodid
+        var id = temp3.split("=")[1];//得到用户id
+        $(".currentMember").html(userName);
+        $(".ulHide").hide();
+        $(".ulShow").show();
+        $(".cartClear").hide();
+        $(".ulShow .ulShowli1").click(function () {
+            $(".currentMember").html("");
+            $(".ulHide").show();
+            $(".ulShow").hide();
+        })
+        $.ajax({
+            type: "get",
+            //url: "http://localhost/letaophp/letao_select_goodId.php",
+            url:"http://bxu2359550159.my3w.com/letaophp/letao_select_goodId.php",
+            data: {goodId: goodid},
+            dataType: "json",
+            success: function (data) {
+                var html = "";
+                console.log(goodid);
+                for(var i=0;i<data.length;i++){
+                    var tmp = data[i];
+                    console.log(tmp);
+                    //["Red dream lover 女式 新款真皮女鞋坡跟方头厚底凉鞋夏季舒适中跟凉鞋DSMD79-1", "2", "298", "11",
+                    // "DSMD79-1_017_1.JPG", "29", "红色，绿色", "600", "11", "1_017_1.JPG", "1_017_2.JPG", "1_017_3.JPG",
+                    // "1_017_4.JPG", "1_017_5.JPG"]
+                    var goodName = tmp[0];
+                    var goodId = tmp[1];
+                    var goodPrice = tmp[2];
+                    var goodNum = tmp[3];
+                    var goodSrc = "images/img7/" + tmp[4];
+                    var goodSee = tmp[5];
+                    var goodSrc1 ="images/img7/" +  tmp[9];
+                    var goodSrc2 ="images/img7/" +  tmp[10];
+                    var goodSrc3 ="images/img7/" +  tmp[11];
+                    var goodSrc4 ="images/img7/" +  tmp[12];
+                    var goodSrc5 ="images/img7/" +  tmp[13];
+                    var restNum = tmp[7];
+                    var payUserNum = tmp[8];
+                    var goodColor =tmp[6]
+                    //var goodColor = goodColor.split(",");
+
+                //<li data-id=${goodId} data-num=${goodNum} data<img src=${goodSrc} class="img"/>
+
+                    console.log(goodId);
+                        html += `<div class="left box">
+            <div class="small">
+                <img src="${goodSrc} " class="smallImg">
+                <div class="mask"></div>
+            </div>
+            <div class="sosmall">
+                <ul class="clear">
+                    <li class="current"><a><img src="${goodSrc1}"/></a></li>
+                    <li><a><img src="${goodSrc2}"/></a></li>
+                    <li><a><img src="${goodSrc3}"/></a></li>
+                    <li><a><img src="${goodSrc4}"/></a></li>
+                    <li><a><img src="${goodSrc5}"/></a></li>
+                </ul>
+            </div>
+            <div class="big">
+                <img src="${goodSrc}" class="bigImg">
+            </div>
+        </div>
+        <div class="left rightBox">
+            <div class="pro_desc"><h2>${goodName}</h2></div>
+            <div class="pro_price">
+                <span class="pro_price_title">销售价：</span>
+                <span style="color:red;">￥</span>
+                <strong class="pro_price_detail" style="color:red;">${goodPrice}.00</strong>
+                <del>市场价：549.00</del>
+            </div>
+            <div class="pro_cuxiao">
+                <span class="pro_cuxiao_title">促销信息：</span>
+                <em>满减</em>
+                <span>满300.0减50.0 满200.0减30.0</span>
+            </div>
+            <div class="pro_size">
+                <span class="pro_size_title">尺寸：</span>
+                <ul class="clear pro_size_ul">
+                    <li><a href="javascript:;" value="34">34</a></li>
+                    <li><a href="javascript:;" value="35">35</a></li>
+                    <li><a href="javascript:;" value="36">36</a></li>
+                    <li><a href="javascript:;" value="37">37</a></li>
+                    <li><a href="javascript:;" value="38">38</a></li>
+                    <li><a href="javascript:;" value="39">39</a></li>
+                </ul>
+            </div>
+            <div class="pro_color clear">
+                <span class="pro_color-title">颜色：</span>
+                <ul class="clear pro_color_ul">
+                    <li><a href="javascript:;" value="红色">红色</a></li>
+                    <li><a href="javascript:;" value="绿色">绿色</a></li>
+                    <li><a href="javascript:;" value="黑色">黑色</a></li>
+                    <li><a href="javascript:;" value="白色">白色</a></li>
+                </ul>
+            </div>
+            <div class="pro_num clear">
+                <span class="pro_num_title">数量：</span>
+                <div class="pro_num_box">
+                    <div class="left">
+                        <span class="jian">-</span>
+                        <input id="buyNum" value="1" >
+                        <span class="jia">+</span>
+                    </div>
+                    <div class="left">
+                        <span>剩余<span id="restNum">${restNum}</span>件</span>
+                        <span><span id="payUserNum">${payUserNum}</span>人已购买</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pro_btn">
+                <button class="addCart"><i><img src="images/img7/icon-cart.png"/></i>加入购物车</button>
+                <button class="lijiBuy">立即购买</button>
+            </div>
+        </div>
+                    `;
+
+                }
+                $(".productIntroduce-wrapper").html(html);
+
+
+                    var box = document.getElementsByClassName("box")[0];
+                    var small = document.getElementsByClassName("small")[0];
+                    var smallImg = document.getElementsByClassName("smallImg")[0];
+                    var mask = document.getElementsByClassName("mask")[0];
+                    var big = document.getElementsByClassName("big")[0];
+                    var bigImg = document.getElementsByClassName('bigImg')[0];
+
+                    //先调整 大图的宽高 ，让 遮罩 跟 大图片的比例对应
+                    //比例关系  遮罩宽度/小图宽度 =  big宽度/大图宽度
+                    //大图宽度 = big宽度 * 小图宽度/遮罩宽度
+                    var bigImgWidth = parseInt(getStyle(big).width) * small.offsetWidth / parseInt(getStyle(mask).width);
+                    var bigImgHeight = parseInt(getStyle(big).height) * small.offsetHeight / parseInt(getStyle(mask).height);
+                    bigImg.style.width = bigImgWidth + "px";
+                    bigImg.style.height = bigImgHeight + "px";
+                    console.log(bigImgWidth);
+                    console.log(bigImgHeight);
+
+                    small.onmouseenter = function () {
+                        mask.style.display = "block";
+                        big.style.display = "block";
+                    }
+                    small.onmousemove = function (event) {
+                        var e = event || window.event;
+
+                        //鼠标移入时，让遮罩随着鼠标移动
+                        var maskX = e.pageX - mask.offsetWidth / 2 - box.offsetLeft;//遮罩左上点的位置
+                        var maskY = e.pageY - mask.offsetWidth / 2 - box.offsetTop;
+                        //console.log(maskX);
+
+                        //边界处理
+                        if (maskX < 0) {
+                            maskX = 0;
+                        } else if (maskX > small.offsetWidth - mask.offsetWidth) {
+                            maskX = small.offsetWidth - mask.offsetWidth;
+                        }
+                        if (maskY < 0) {
+                            maskY = 0;
+                        } else if (maskY > small.offsetWidth - mask.offsetWidth) {
+                            maskY = small.offsetWidth - mask.offsetWidth;
+                        }
+                        mask.style.left = maskX + "px";
+                        mask.style.top = maskY + "px";
+
+                        //遮罩移动时，大图要随比例移动
+                        //比列关系：遮罩移动的距离 /小图的宽度 = 大图移动的距离/大图的宽度
+                        //大图移动的距离 =大图的宽度* 遮罩移动的距离 /小图的宽度
+                        bigImg.style.left = -maskX * bigImgWidth / small.offsetWidth + "px";
+                        bigImg.style.top = -maskY * bigImgHeight / small.offsetWidth + "px";
+
+                    };
+                    small.onmouseleave = function () {
+                        mask.style.display = "none";
+                        big.style.display = "none";
+                    }
+
+                    //当点击最小图时，
+                    var ssmall = document.getElementsByClassName("sosmall")[0];
+                    var lis = $(".sosmall li");//ssmall.getElementsByTagName("li");
+                    for (var i = 0; i < lis.length; i++) {
+                        lis[i].index = i;
+                        lis[i].onclick = function () {
+                            for (var j = 0; j < lis.length; j++) {
+                                lis[j].className = " ";
+                            }
+                            lis[this.index].className = "current";
+                            var t = this.index;
+                            //smallImg.src = "images/img7/CZ708_017_" + (this.index+1) +".JPG";
+                            //bigImg.src = "images/img7/CZ708_017_"+ (this.index+1) +".JPG";
+                            $.ajax({
+                                type: "get",
+                                //url: "http://localhost/letaophp/letao_select_goodId.php",
+                                url:"http://bxu2359550159.my3w.com/letaophp/letao_select_goodId.php",
+                                data: {goodId: goodid},
+                                dataType: "json",
+                                success: function (data) {
+                                    var html = "";
+                                    for (var k = 0; k < data.length; k++) {
+                                        var tmp = data[k];
+                                        console.log(tmp);
+                                        var goodSrc = tmp[4];
+                                        console.log(goodSrc);
+                                        var temp = goodSrc.split("1.")[0];
+                                        console.log(temp);
+                                        smallImg.src = "images/img7/" + temp + (t + 1) + ".JPG";
+                                        bigImg.src = "images/img7/" + temp + (t + 1) + ".JPG";
+                                        //images/img7/CZ708_017_2.JPG
+                                        console.log(smallImg.src = "images/img7/" + temp + (t + 1) + ".JPG");
+                                    }
+                                }
+                            });
+                        }
+                    }
+
+                /*$(".pro_size_ul li a").hover(function(){
+                    $(this).addClass("red2");
+                    console.log($(this));
+                },function(){
+                    $(this).removeClass("red2");
+                    console.log($(this));
+                });*/
+
+                $(document).on("click",".pro_size_ul li a",function (){
+                    var lis = $(".pro_size_ul li a")
+                    for(var i = 0;i< lis.length;i++){
+                        lis[i].className = "";
+                    }
+                    $(this).addClass("red1");
+                    console.log($(this));
+                })
+                $(document).on("click",".pro_color_ul li a",function (){
+                    var lis = $(".pro_color_ul li a")
+                    for(var i = 0;i< lis.length;i++){
+                        lis[i].className = "";
+                    }
+                    $(this).addClass("red2");
+                    console.log($(this));
+                })
+                $(document).on("click",".jia",function (){
+                    var j = $("#buyNum").val();
+                    j++;
+                    $("#buyNum").val(j);
+
+                })
+                $(document).on("click",".jian",function (){
+                    var j = $("#buyNum").val();
+                    if(j>1){
+                        j--;
+                        $("#buyNum").val(j);
+                    }else{
+                        $(".jian").attr("disabled","true");
+                    }
+                })
+
+
+               /* $(document).on("click",".lijiBuy",function () {
+                    var cartNum = $("#buyNum").val();
+                    var pro_size = $(document).find(".red1").eq(0).html();//37
+                    var pro_color = $(document).find(".red2").eq(0).html();//黑色
+                    console.log(pro_size,pro_color);
+                    window.location.href = "myshoppingcar.html?userName="+userName+"&goodId="+goodid+"&cartNum="+cartNum
+                    +"&pro_size="+pro_size+"&pro_color="+pro_color;
+                })*/
+                $(document).on("click",".myshoppingcar",function () {
+                    /*var cartNum = $(".myshoppingcar .span2").html();
+                    var pro_size = $(document).find(".red1").eq(0).html();//37
+                    var pro_color = $(document).find(".red2").eq(0).html();//黑色
+                    window.location.href = "myshoppingcar.html?userName="+userName+"&goodId="+goodid+"&cartNum="+cartNum
+                        +"&pro_size="+pro_size+"&pro_color="+pro_color;*/
+                    window.location.href = "myshoppingcar.html?userName="+userName+"&id="+id;
+                })
+
+                $(document).on("click",".womenBtn",function () {
+                    if (search.indexOf("userName") != -1) {
+                        window.location.href = "womenshoes.html?userName=" + userName+"&id="+id;
+                    }else {
+                        window.location.href = "womenshoes.html"
+                    }
+                })
+
+
+                var search = window.location.search;
+                if (search.indexOf("id") != -1) {
+                    $.ajax({
+                        type: "get",
+                        url: "http://bxu2359550159.my3w.com/letaophp/myshoppingcart.php",
+                        data: {userId: id},
+                        dataType: "json",
+                        success: function (result) {
+                            var count = 0;
+                            $(result).each(function (index, item) {
+                                //console.log(item);//"1" "1" "1" "1"
+                                // "Red dream lover 女式 新款真皮坡跟凉鞋欧美风防水台高跟夏季水钻休闲凉鞋CZ708"
+                                //"298"  "28"  "CZ708_017_1.JPG"
+                                count += item[3] * 1;//item[3]为num
+                            })
+                            if (count == 0) {
+                                $(".myshoppingcar .span2").html(0);
+                            } else {
+                                $(".myshoppingcar .span2").html(count);
+                            }
+                        }
+                    });
+                }
+
+
+                $(document).on("click",".addCart",function () {
+                    //alert("maimaimai");
+                    var t = $("#buyNum").val();
+                    $.ajax({
+                        type: "get",
+                        url: "http://bxu2359550159.my3w.com/letaophp/addshoppingcart.php",
+                        data: {
+                            userId: id,
+                            goodId: goodId,
+                            num: t,
+                            goodName: goodName,
+                            goodPrice: goodPrice,
+                            goodSrc: goodSrc.split("/")[2],
+                        },
+                        success: function (result) {
+                            if (result) {
+                                if (confirm("添加成功，是否前往购物车结算")) {
+                                    window.location.href = "myshoppingcar.html?userName="+userName+ "&id="+id;
+                                } else {
+                                    $.ajax({
+                                        type: "get",
+                                        url: "http://bxu2359550159.my3w.com/letaophp/myshoppingcart.php",
+                                        data: {userId: id},
+                                        dataType: "json",
+                                        success: function (result) {
+                                            var count = 0;
+                                            $(result).each(function (index, item) {
+                                                //console.log(item);//"1" "1" "1" "1"
+                                                // "Red dream lover 女式 新款真皮坡跟凉鞋欧美风防水台高跟夏季水钻休闲凉鞋CZ708"
+                                                //"298"  "28"  "CZ708_017_1.JPG"
+                                                count += item[3] * 1;//item[3]为num
+                                            })
+                                            if (count == 0) {
+                                                $(".myshoppingcar .span2").html(0);
+                                            } else {
+                                                $(".myshoppingcar .span2").html("");
+                                                $(".myshoppingcar .span2").html(count);
+                                            }
+                                        }
+                                    });
+                                    //$(".cartClear").html("现在购物车有商品了，快去结算吧");
+                                    var hl = "";
+                                    hl += `<img src="${goodSrc}" class="visitImg">
+                                          `
+
+                                    $(".cartClear").html(hl);
+                                }
+                            }
+                        }
+
+
+                    });
+
+                })
+            }
+
+        })
+    }
+
+
+
+
+
+
+
+</script>
+</html>
